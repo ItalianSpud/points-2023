@@ -29,6 +29,7 @@ public:
     PointList(const PointList& original);
     PointList& operator=(const PointList& original);
     PointList(size_t size);
+    bool Equals(const PointList& compareList) const;
     Point At(size_t index) const;
     void Read(istream& input);
     void Write(ostream& output);
